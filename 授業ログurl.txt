@@ -1,0 +1,26 @@
+LaLaの講習URL
+
+https://github.com/SeiichiN/LaLa-servlet-jsp-2025-06-A
+
+
+クローンの仕方
+
+(1) 
+  c:\workspaces でコマンドプロンプトを起動する。
+
+  (a)
+  c:\workspaces に移動。
+  "cmd" と入力してコマンドプロンプトを起動。
+
+  あるいは、
+
+  (b)
+  コマンドプロンプトを起動。
+  c:\workspaces> cd c:\workspaces と入力して、c:\workspaces に移動。
+
+
+(2)
+  それから、以下のコマンドを実行して、クローンする。。
+
+  c:\workspaces> git clone https://github.com/SeiichiN/LaLa-servlet-jsp-2025-06-A.git
+
