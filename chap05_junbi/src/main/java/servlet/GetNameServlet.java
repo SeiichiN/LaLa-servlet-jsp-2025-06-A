@@ -15,11 +15,17 @@ public class GetNameServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		String name = request.getParameter("name");
+		String[] hobby = request.getParameterValues("hobby");
 		
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		out.println("<html><body>");
 		out.println("名前：" + name + "<br />");
+		out.println("趣味：");
+		for (String s : hobby) {
+			out.print(s + " ");
+		}
+		out.println("<br />");
 		out.println("<a href=\"/chap05_junbi/\">もどる</a>");
 		out.println("</body></html>");
 	}
