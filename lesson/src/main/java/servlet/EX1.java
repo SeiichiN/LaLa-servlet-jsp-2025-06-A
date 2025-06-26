@@ -9,19 +9,14 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/hello")
-public class HelloServlet extends HttpServlet {
+@WebServlet("/ex1")
+public class EX1 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
 
-	protected void doGet(HttpServletRequest request,
-			HttpServletResponse response)
-			throws ServletException, IOException {
-
-		response.setContentType("text/html; charset=UTF-8");
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("ABCDE");
 		PrintWriter out = response.getWriter();
-		out.println("<html>");
-		out.println("・wahaha・・");
-		out.println("</html>");
+		out.println("<html><body>Hello</body></html>");
 	}
-
 
 }

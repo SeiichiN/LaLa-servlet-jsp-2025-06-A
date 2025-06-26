@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+	background-color: pink;
+}
+main {
+	width: 80%;
+	height: 200px;
+	margin: 0 auto;
+	background-color: #fff;
+}
