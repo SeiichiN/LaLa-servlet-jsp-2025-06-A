@@ -2,7 +2,6 @@ package servlet;
 
 import java.io.IOException;
 
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -15,9 +14,8 @@ public class ForwardServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("ようこそ、ここはサーブレットです");
-		RequestDispatcher d = 
-				request.getRequestDispatcher("WEB-INF/jsp/forward.jsp");
-		d.forward(request, response);
+		String path = "WEB-INF/jsp/forward.jsp";
+		request.getRequestDispatcher(path).forward(request, response);
 	}
 
 }
